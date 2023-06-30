@@ -14,7 +14,7 @@ def generate_qr_code(url, filename):
     img.save(filename)
 
 # Example usage
-url = "https://example.com"
+url = "https://www.linkedin.com/in/narender-singh-561a53200/"
 filename = "qrcode.png"
 generate_qr_code(url, filename)
 print(f"QR code saved as {filename}")
