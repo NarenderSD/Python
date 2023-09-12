@@ -1,0 +1,23 @@
+from PIL import Image
+
+def resize_image(input_path, output_path, size):
+    try:
+        # Open the image file
+        image = Image.open(input_path)
+        
+        # Resize the image
+        resized_image = image.resize(size)
+        
+        # Save the resized image
+        resized_image.save(output_path)
+        
+        print(f"Image resized and saved to {output_path}")
+    except Exception as e:
+        print(f"Error: {e}")
+
+# Example usage:
+input_image_path = "input.jpg"
+output_image_path = "output.jpg"
+new_size = (800, 600)
+
+resize_image(input_image_path, output_image_path, new_size)
